@@ -7,5 +7,5 @@ Proyecto del [Curso de fundamentos de JS](https://platzi.com/clases/fundamentos-
 * Prototipos y Clases
 * Asincronía
 
-##Descripción
+## Descripción
 Juego de "Simón dice" de hasta 10 Niveles.
