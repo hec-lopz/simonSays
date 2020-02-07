@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Open+Sans&display=swap');
+
+:root {
+  --title-font: 'Montserrat', sans-serif;
+  --text-font: 'Open Sans', sans-serif;
+  --main-color: #e1f4f3;
+  --color1: #f11e1e;
+  --color1-light: #e9a0a0;
+  --color2: #193acc;
+  --color2-light: #7388e2;
+  --color3: #e9c31c;
+  --color3-light: #e6daa2;
+  --color4: #07bb19;
+  --color4-light: #78de82;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  font-family: var(--text-font);
+  background-color: var(--main-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100vh;
+}
+h1{
+  margin: 0;
+  padding: 0;
+  font-family: var(--title-font);
+  font-size: 70px;
+  font-weight: 400;
+}
+
+.main-board{
+  position: relative;
+}
+.main-board__start-game {
+  position: absolute;
+  background-color: #333333;
+  font-size: 25px;
+  color: white;
+  border-radius: 5px;
+  text-align:center;
+  padding: 25px 50px;
+  /* padding: 10px 100px; */
+  top: 220px;
+  right: -50px;
+  left: -50px;
+  cursor: pointer;
+}
+.main-board__start-game:hover {
+  background-color: #828282;
+}
+
+.is-active {
+  display: none;
+}
+
+.game-container{
+  align-self: center;
+  justify-self: center;
+  display: grid;
+  grid-template-columns: repeat(2, 250px);
+  grid-template-rows: repeat(2, 250px);
+  gap: 5px;
+}
+.game-cell {
+  overflow: hidden;
+  position: relative;
+}
+.color-container {
+  background-color: red;
+  border-radius: 50%;
+  /* border: 1px solid black; */
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  
+}
+.game-cell__right {
+  right: 0;
+}
+.game-cell__bottom {
+  bottom: 0;
+}
+.color1{
+  background-color: var(--color1);
+}
+.color2{
+  background-color: var(--color2);
+}
+.color3{
+  background-color: var(--color3);
+}
+.color4{
+  background-color: var(--color4);
+}
+.color1.light{
+  background-color: var(--color1-light);
+}
+.color2.light{
+  background-color: var(--color2-light);
+}
+.color3.light{
+  background-color: var(--color3-light);
+}
+.color4.light{
+  background-color: var(--color4-light);
+}
