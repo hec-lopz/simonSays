@@ -3,7 +3,7 @@ const red = document.getElementById('red')
 const blue = document.getElementById('blue')
 const yellow = document.getElementById('yellow')
 const green = document.getElementById('green')
-const FINAL_LEVEL = 5
+const FINAL_LEVEL = parseInt(prompt('Cuantos niveles: '))
 
 start_game_sign.addEventListener('click', startGame)
 
@@ -75,7 +75,7 @@ class Juego {
       const color = this.changeNumberToColor(this.secuencia[i])
       setTimeout(() => this.lightColor(color), 1000 * i ) 
     }
-    setTimeout(this.addListener, this.level * 800 ) 
+    setTimeout(this.addListener, this.level * 850 ) 
 
   }
   lightColor (color) {
